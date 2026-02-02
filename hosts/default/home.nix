@@ -12,8 +12,8 @@
   ];
 
   home.stateVersion = "25.11";
-  home.username = "nixos";
-  home.homeDirectory = "/home/nixos";
+  home.username = "will";
+  home.homeDirectory = "/home/will";
 
   programs.home-manager.enable = true;
 

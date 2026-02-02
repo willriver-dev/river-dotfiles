@@ -36,8 +36,7 @@
           {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-            home-manager.users.nixos = import ./hosts/default/home.nix;
-            home-manager.extraSpecialArgs = { inherit noctalia; };
+            home-manager.users.will= import ./hosts/default/home.nix;
           }
           
           ({ pkgs, ... }: {
