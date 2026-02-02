@@ -31,11 +31,13 @@
     LC_TIME = "en_US.UTF-8";
   };
 
-  users.users.nixos = {
+  users.users.will = {
     isNormalUser = true;
     description = "NixOS User";
     extraGroups = [ "networkmanager" "wheel" "docker" ];
     packages = with pkgs; [];
+
+    initialPassword = "changeme";
   };
 
   nixpkgs.config.allowUnfree = true;
@@ -59,5 +61,5 @@
 
   services.flatpak.enable = true;
 
-  system.stateVersion = "25.05";
+  system.stateVersion = "25.11";
 }

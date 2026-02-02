@@ -11,7 +11,7 @@
     ../../modules/home/utilities.nix
   ];
 
-  home.stateVersion = "25.05";
+  home.stateVersion = "25.11";
   home.username = "nixos";
   home.homeDirectory = "/home/nixos";
 
