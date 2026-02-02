@@ -3,6 +3,31 @@
 
 # Nix build results
 result
+
+# Installation files
+.install-info
+.setup-info
+*.backup.*
+
+# Hardware configuration (user-specific)
+hosts/*/hardware-configuration.nix
+
+# Personal credentials
+.nixos-initial-password
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.swp
+*~
+.DS_Store
+
+# Editor directories
+.vscode/
+.idea/
+*.iml
 result-*
 
 # Editor
