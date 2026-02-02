@@ -1,3 +1,104 @@
 {
-  "note": "Replace this with your actual noctalia plugins.json"
+  "plugins": [
+    {
+      "name": "launcher",
+      "enabled": true,
+      "type": "core",
+      "config": {
+        "search_providers": [
+          "applications",
+          "files",
+          "commands",
+          "calculator",
+          "web"
+        ],
+        "show_recent": true,
+        "max_recent": 10
+      }
+    },
+    {
+      "name": "notifications",
+      "enabled": true,
+      "type": "core",
+      "config": {
+        "sound_enabled": false,
+        "show_body": true,
+        "show_actions": true,
+        "priority_filtering": true
+      }
+    },
+    {
+      "name": "calendar",
+      "enabled": true,
+      "type": "core",
+      "config": {
+        "show_lunar": false,
+        "highlight_today": true,
+        "show_holidays": true
+      }
+    },
+    {
+      "name": "quicksettings",
+      "enabled": true,
+      "type": "core",
+      "config": {
+        "modules": [
+          "wifi",
+          "bluetooth",
+          "audio",
+          "brightness",
+          "battery",
+          "nightlight",
+          "dnd",
+          "power"
+        ]
+      }
+    },
+    {
+      "name": "system-tray",
+      "enabled": true,
+      "type": "core",
+      "config": {
+        "pinned_apps": []
+      }
+    },
+    {
+      "name": "clock",
+      "enabled": true,
+      "type": "core",
+      "config": {
+        "show_timezone": false,
+        "click_action": "calendar"
+      }
+    },
+    {
+      "name": "workspaces",
+      "enabled": true,
+      "type": "core",
+      "config": {
+        "show_empty": true,
+        "scroll_to_switch": true
+      }
+    },
+    {
+      "name": "media-player",
+      "enabled": true,
+      "type": "plugin",
+      "config": {
+        "show_album_art": true,
+        "show_controls": true,
+        "max_title_length": 40
+      }
+    },
+    {
+      "name": "weather",
+      "enabled": false,
+      "type": "plugin",
+      "config": {
+        "location": "auto",
+        "units": "metric",
+        "update_interval": 1800
+      }
+    }
+  ]
 }
