@@ -1,0 +1,17 @@
+# Hardware config (machine-specific)
+hosts/*/hardware-configuration.nix
+
+# Nix build results
+result
+result-*
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
