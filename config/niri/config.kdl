@@ -383,6 +383,12 @@ binds {
     Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
     Print { spawn-sh "grim -g \"$(slurp)\" - | wl-copy"; }
 
+    // Wallpaper management - chuyển ảnh nền với các hiệu ứng đẹp
+    Mod+Alt+W hotkey-overlay-title="Random Wallpaper" { spawn "wallpaper-manager" "random"; }
+    Mod+Alt+N hotkey-overlay-title="Next Wallpaper" { spawn "wallpaper-manager" "next"; }
+    Mod+Alt+B hotkey-overlay-title="Previous Wallpaper" { spawn "wallpaper-manager" "prev"; }
+    Mod+Alt+G hotkey-overlay-title="Random Wallpaper with Grow Effect" { spawn-sh "SWWW_TRANSITION=grow wallpaper-manager random"; }
+
     // Use spawn-sh to run a shell command. Do this if you need pipes, multiple commands, etc.
     // Note: the entire command goes as a single argument. It's passed verbatim to `sh -c`.
     // For example, this is a standard bind to toggle the screen reader (orca).
