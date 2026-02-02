@@ -1,0 +1,262 @@
+/* ReGreet Custom Style - Modern & Beautiful Login Screen */
+
+* {
+    font-family: "Inter", "Noto Sans", sans-serif;
+    font-size: 14px;
+}
+
+/* Main Window */
+window {
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(20px);
+}
+
+/* Login Container */
+#window_box {
+    background-color: rgba(30, 30, 30, 0.85);
+    border-radius: 24px;
+    padding: 40px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Greeting Message */
+#greeting_label {
+    font-size: 32px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 30px;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Input Fields */
+entry {
+    background-color: rgba(50, 50, 50, 0.8);
+    border: 2px solid rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    padding: 14px 18px;
+    color: #ffffff;
+    margin: 8px 0;
+    min-width: 320px;
+    transition: all 0.3s ease;
+}
+
+entry:focus {
+    background-color: rgba(60, 60, 60, 0.9);
+    border-color: #6750A4;
+    box-shadow: 0 0 0 3px rgba(103, 80, 164, 0.2);
+    outline: none;
+}
+
+entry:hover {
+    border-color: rgba(255, 255, 255, 0.25);
+}
+
+/* Placeholder text */
+entry::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* Login Button */
+button {
+    background: linear-gradient(135deg, #6750A4 0%, #8B5CF6 100%);
+    border: none;
+    border-radius: 12px;
+    color: #ffffff;
+    padding: 14px 32px;
+    font-weight: 600;
+    font-size: 15px;
+    margin: 12px 4px;
+    min-width: 140px;
+    box-shadow: 0 4px 15px rgba(103, 80, 164, 0.4);
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #7860B4 0%, #9B6CF6 100%);
+    box-shadow: 0 6px 20px rgba(103, 80, 164, 0.6);
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 10px rgba(103, 80, 164, 0.4);
+}
+
+button:disabled {
+    background: rgba(100, 100, 100, 0.4);
+    color: rgba(255, 255, 255, 0.4);
+    box-shadow: none;
+    cursor: not-allowed;
+}
+
+/* Power Buttons (Reboot/Shutdown) */
+#power_button {
+    background: rgba(220, 38, 38, 0.8);
+    border-radius: 12px;
+    padding: 12px;
+    margin: 4px;
+    min-width: 60px;
+}
+
+#power_button:hover {
+    background: rgba(239, 68, 68, 0.9);
+}
+
+#reboot_button {
+    background: rgba(251, 146, 60, 0.8);
+}
+
+#reboot_button:hover {
+    background: rgba(251, 146, 60, 0.9);
+}
+
+/* Session Selector */
+combobox {
+    background-color: rgba(50, 50, 50, 0.8);
+    border: 2px solid rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    padding: 12px 16px;
+    color: #ffffff;
+    margin: 8px 0;
+}
+
+combobox:hover {
+    border-color: rgba(255, 255, 255, 0.25);
+}
+
+/* Dropdown Arrow */
+combobox arrow {
+    color: #ffffff;
+    min-height: 16px;
+    min-width: 16px;
+}
+
+/* Dropdown Menu */
+menu {
+    background-color: rgba(40, 40, 40, 0.95);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    padding: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+menuitem {
+    color: #ffffff;
+    padding: 10px 16px;
+    border-radius: 8px;
+}
+
+menuitem:hover {
+    background-color: rgba(103, 80, 164, 0.4);
+}
+
+/* Labels */
+label {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 14px;
+    margin: 6px 0;
+}
+
+/* User/Session Labels */
+#user_label,
+#session_label {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 13px;
+    font-weight: 500;
+    margin-top: 16px;
+    margin-bottom: 6px;
+}
+
+/* Error/Status Messages */
+#error_label {
+    color: #EF4444;
+    font-size: 13px;
+    margin: 12px 0;
+    padding: 10px 14px;
+    background-color: rgba(239, 68, 68, 0.15);
+    border-radius: 8px;
+    border-left: 3px solid #EF4444;
+}
+
+#status_label {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+/* Clock/Time Display */
+#clock_label {
+    font-size: 18px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 20px;
+}
+
+/* Separator */
+separator {
+    background-color: rgba(255, 255, 255, 0.1);
+    min-height: 1px;
+    margin: 16px 0;
+}
+
+/* Box Containers */
+box {
+    margin: 4px;
+}
+
+/* Scrollbars (if needed) */
+scrollbar {
+    background-color: transparent;
+}
+
+scrollbar slider {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 6px;
+    min-width: 8px;
+}
+
+scrollbar slider:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Tooltip */
+tooltip {
+    background-color: rgba(30, 30, 30, 0.95);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 8px;
+    padding: 8px 12px;
+    color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#window_box {
+    animation: fadeIn 0.5s ease-out;
+}
+
+/* Responsive Design Hints */
+@media (max-width: 800px) {
+    #window_box {
+        padding: 30px;
+    }
+
+    entry {
+        min-width: 280px;
+    }
+
+    #greeting_label {
+        font-size: 28px;
+    }
+}

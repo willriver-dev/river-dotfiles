@@ -1,0 +1,36 @@
+# Hardware Configuration Template
+#
+# This file is a placeholder. You need to generate your actual hardware
+# configuration by running:
+#
+#   sudo nixos-generate-config --show-hardware-config > hosts/default/hardware-configuration.nix
+#
+# Or simply run the installer script:
+#
+#   ./install.sh
+#
+# The installer will automatically generate this file for you.
+
+{ config, lib, pkgs, modulesPath, ... }:
+
+{
+  imports = [ ];
+
+  # This is a template file. Replace this with your actual hardware configuration.
+  # The installer script (install.sh) will automatically generate this for you.
+
+  # Typical hardware configuration includes:
+  # - Boot loader settings
+  # - File system configurations
+  # - Kernel modules
+  # - Swap configuration
+  # - Network interfaces
+
+  # Example structure (will be replaced by actual hardware detection):
+  # boot.initrd.availableKernelModules = [ "xhci_pci" "ahci" "nvme" "usb_storage" "sd_mod" ];
+  # boot.kernelModules = [ "kvm-intel" ];
+  # fileSystems."/" = { device = "/dev/disk/by-uuid/..."; fsType = "ext4"; };
+  # swapDevices = [ ];
+
+  nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
+}
