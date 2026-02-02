@@ -54,6 +54,24 @@ SWWW_TRANSITION=grow wallpaper-manager random
 
 `Mod+Alt+W` - Random | `Mod+Alt+N` - Next | `Mod+Alt+B` - Prev
 
+## 🐚 Noctalia Shell
+
+### Features
+
+- **Launcher** (`Mod+Space`) - Search apps, files, commands
+- **Notifications** (`Mod+N`) - Notification center
+- **Calendar** (`Mod+C`) - Date and events
+- **Quick Settings** (`Mod+P`) - Network, Bluetooth, Audio, etc.
+
+### Auto-Start
+
+Noctalia Shell starts automatically with Niri. Config files in `config/noctalia/`:
+- `colors.json` - Color scheme
+- `settings.json` - Behavior and appearance
+- `plugins.json` - Enable/disable features
+
+See [config/noctalia/README.md](config/noctalia/README.md) for details.
+
 ## 🛠️ Customize
 
 **Add wallpapers:**

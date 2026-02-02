@@ -1,3 +1,129 @@
 {
-  "note": "Replace this with your actual noctalia settings.json"
+  "general": {
+    "theme": "dark",
+    "animations": true,
+    "animation_speed": "normal",
+    "transparency": true,
+    "blur": true,
+    "border_radius": 12,
+    "gaps": 8
+  },
+
+  "panel": {
+    "position": "top",
+    "height": 40,
+    "auto_hide": false,
+    "padding": 8,
+    "background_opacity": 0.95,
+    "blur_enabled": true,
+    "show_workspaces": true,
+    "show_system_tray": true,
+    "show_clock": true,
+    "show_notifications": true
+  },
+
+  "launcher": {
+    "enabled": true,
+    "width": 600,
+    "height": 500,
+    "max_results": 8,
+    "show_icons": true,
+    "fuzzy_search": true,
+    "remember_history": true,
+    "position": "center",
+    "activation": "Mod+Space"
+  },
+
+  "notifications": {
+    "enabled": true,
+    "position": "top-right",
+    "width": 400,
+    "max_notifications": 5,
+    "timeout": 5000,
+    "show_icons": true,
+    "group_by_app": true,
+    "do_not_disturb_mode": false,
+    "history_enabled": true,
+    "activation": "Mod+N"
+  },
+
+  "calendar": {
+    "enabled": true,
+    "width": 400,
+    "show_week_numbers": true,
+    "first_day_of_week": "monday",
+    "show_events": true,
+    "activation": "Mod+C"
+  },
+
+  "quicksettings": {
+    "enabled": true,
+    "width": 400,
+    "position": "top-right",
+    "show_network": true,
+    "show_bluetooth": true,
+    "show_audio": true,
+    "show_brightness": true,
+    "show_battery": true,
+    "show_power_options": true,
+    "activation": "Mod+P"
+  },
+
+  "system_tray": {
+    "enabled": true,
+    "icon_size": 20,
+    "spacing": 8,
+    "show_labels": false
+  },
+
+  "clock": {
+    "format": "24h",
+    "show_date": true,
+    "show_seconds": false,
+    "date_format": "%A, %d %B %Y",
+    "time_format": "%H:%M"
+  },
+
+  "audio": {
+    "show_volume_osd": true,
+    "max_volume": 100,
+    "volume_step": 5,
+    "allow_over_amplification": false
+  },
+
+  "network": {
+    "show_wifi_strength": true,
+    "show_connection_speed": false,
+    "auto_connect": true
+  },
+
+  "power": {
+    "show_battery_percentage": true,
+    "low_battery_warning": 20,
+    "critical_battery_warning": 10,
+    "power_save_mode": false
+  },
+
+  "appearance": {
+    "font_family": "Inter, sans-serif",
+    "font_size": 14,
+    "icon_theme": "Papirus-Dark",
+    "cursor_theme": "Adwaita",
+    "gtk_theme": "Adwaita-dark"
+  },
+
+  "keybindings": {
+    "launcher": "Mod+Space",
+    "notifications": "Mod+N",
+    "calendar": "Mod+C",
+    "quicksettings": "Mod+P",
+    "terminal": "Mod+Return",
+    "close_widget": "Escape"
+  },
+
+  "startup": {
+    "auto_start": true,
+    "delay": 500,
+    "check_updates": false
+  }
 }
