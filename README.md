@@ -1,7 +1,5 @@
 # NixOS + Niri + Noctalia Shell - Universal Dotfiles
 
-See full documentation at: https://github.com/yourusername/nixos-dotfiles
-
 ## Quick Start
 
 1. Generate hardware config:
